@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asidebar</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .sidebar{
+            background: linear-gradient(45deg, blueviolet, deeppink);
+            float: left;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 5px 10px black;
+            height: 100vh;
+            padding:10px;
+        }
+        .sidebar a{
+            display: block;
+            color: azure;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 25px;
+        }
+        .sidebar a:hover{
+            background: linear-gradient(45deg, orangered, pink);
+            border-radius: 50px;
+            box-shadow: 0 0 5px blue;
+
+        }
+        .sidebar img{
+            width:150px;
+            height: 150px;
+            border: 10px solid coral;
+            border-radius: 50%;
+            box-shadow: 0 0 5px blue;
+            margin-bottom: 10px;
+            <!--for color color picker--!>
+        }
+    </style>
+</head>
+<body>
+    <!-- sidebar-->
+    <aside class="sidebar">
+        <img src="data:image/png;base64,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" alt="">
+     <a href="">html</a>
+     <a href="">css</a>
+     <a href="">bootstrap</a>
+     <a href="">javascript</a>
+     <a href="">jquery</a>
+     <a href="">node js</a>
+     <a href="">react js</a>
+    </aside>
+</body>
+</html>
